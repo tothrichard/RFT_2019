@@ -13,3 +13,12 @@ A szoftver a következõ operációs rendszereken használható:
 - Windows 8 32/64 bit
 - Windows 8.1 32/64 bit
 - Windows 10 32/64 bit
+
+Hibakezelés:
+Az alkalmazás használata közben felmerülõ hibák:
+1. .NET hiánya által keletkezett hibák
+    - A minimális rendszer követelményekrõl tájékoztatva van a felhasználó.
+
+2. nem kezelt belsõ program hiba
+    - A felhasználónak lehetõsége van a verziókezelõ rendszerben tájékoztatni a fejlesztõket a hibáról
+
