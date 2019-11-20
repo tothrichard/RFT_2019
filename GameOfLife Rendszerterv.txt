@@ -4,6 +4,7 @@ A rendszer célja:
   A játék egy kellemes kikapcsolódást nyújt elvonja a figyelmet a mindennapi dolgokról ezzel segítve a stressz levezetését.
 
 Általános követelmények:
+--------------------------
 Nem funkcionális követelmények
 - Egyszerû, minimalista téma/design
 - Akadálymentes felület biztosítása
@@ -21,4 +22,30 @@ Az alkalmazás használata közben felmerülõ hibák:
 
 2. nem kezelt belsõ program hiba
     - A felhasználónak lehetõsége van a verziókezelõ rendszerben tájékoztatni a fejlesztõket a hibáról
+-------------------------------
+TELEPÍTÉSI TERV
+-------------------------------
+Az alkalmazás telepítés nélkül futtatható (portable) egy .exe segítségével Windows operációs rendszereken.
+
+-------------------------------
+KARBANTARTÁSI TERV
+-------------------------------
+Az alkalmazás minimális karbantartást igényel, amely a következõkre bontható:
+- Ellenõrizni kell, hogy a jövõben kiadott Windows verziókkal kompatibilis-e az alkalmazás.
+- Idõ elteltével új kategóriákat kell hozzáadni a játékhoz, hogy fent tartsuk az érdeklõdési szintet.
+
+-----------------------------
+FUNKCIONÁLIS TERV
+-----------------------------
+
+Az alkalmazás három fõ részre bontása:
+-A játék menü része és annak menüpontjai, ami öt gombot tartalmaz, amibõl három az almenük közötti válogatást teszi lehetõvé.
+-A játék és annak különbözõ grafikai elemei és funkciói.
+
+---------------------------
+FIZIKAI KÖRNYEZET
+--------------------------
+A játéknak nem célja a többi operációs rendszeren való futás.
+
+
 
