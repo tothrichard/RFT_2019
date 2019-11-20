@@ -1,1 +1,7 @@
-
+Jelenlegi helyzet leírása:
+ A játék jelenleg minden funkciót tartalmaz, de esetleges bugog felléphetnek. 
+ A bugok fixelése után a játékos képes legyen a Főmenüben testreszabni kedve szerint. 
+ A játékot pillanatmegállítóval meg lehessen állítani és szabadon a főmenübe lehessen lépni. 
+ A megrendelő által megszabott feltétel alapján a rendszert 2 részre kell tagolni.
+ Ezek a fő részek a főmenü (main menü) és a játéktér (main).
+ Minden grafiaki elemnek egyedinek kell lennie, a fejlesztőket terheli ennek elkészítése.
