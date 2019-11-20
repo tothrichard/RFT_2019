@@ -2,5 +2,14 @@ A rendszer célja:
 
   A szoftver azon embereket célozza meg, akik szeretnek játszani és hajlandóak ezzel eltölteni a szabad idejüket is. 
   A játék egy kellemes kikapcsolódást nyújt elvonja a figyelmet a mindennapi dolgokról ezzel segítve a stressz levezetését.
-  
- 
+
+Általános követelmények:
+Nem funkcionális követelmények
+- Egyszerû, minimalista téma/design
+- Akadálymentes felület biztosítása
+
+Támogatott eszközök:
+A szoftver a következõ operációs rendszereken használható:
+- Windows 8 32/64 bit
+- Windows 8.1 32/64 bit
+- Windows 10 32/64 bit
