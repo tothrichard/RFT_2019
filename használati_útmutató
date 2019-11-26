@@ -1,0 +1,18 @@
+﻿Használati Útmutató:
+
+Telepítés:
+	- A játék telepítés nélkül futtatható a RFTProject futtatásával.
+
+Fő menü:
+	- Játék: új játék indítására van lehetőség, szint választás utána.
+	- Kilépés: Kilépés a játékból.
+
+Levels:
+	- Select level: új játékot indíthatunk a kiválasztott nehézségi szinten. 
+	- Back: visszalépés a főmenübe.
+
+Játék:
+	-start:a pálya elrendeződik tetszőleges időben megállíthatjuk a rendeződést.
+	-pályák:visszalépés a levels menübe.
+	-menü:visszalépés a főmenübe.
+	- addig kell a négyzetekre kattingatni amíg egy színű nem lesz a felület.
