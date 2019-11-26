@@ -23,3 +23,11 @@ Követelmény lista:
  - Testreszabhatóság
  - Minimális erőforrás igényre való törekvés
  - Hiba mentes futtatás
+
+Fogalomszótár:
+  - New Game -új játék indítása
+  - main menü - főmenü
+  - exit - kilépés a játékból
+  - back - vissza
+  - bug - hiba
+  - platform - szoftverkörnyezet
