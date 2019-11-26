@@ -23,3 +23,10 @@ Project neve: „Game Of Life”
     Minden szinthez külön időkorlát van rendelve.
     A játék megpróbálja a felhasználó reakció idejét feljleszteni hiszen a pályák egyre nehezebbek és
     az időkorlát is egyre szúkösebb ahogy halad a szintek között.
+
+
+  Igényelt üzleti folyamatok modellje:
+  
+     A megrendelővel egyeztetések és kölönböző ötletek felvázolása után az elképzelés a következő:
+     Egy modern, naprakész, könnyen használható és egyben megbízható játék megfelelő.
+     A játék kizárólag windows-ra készül.
