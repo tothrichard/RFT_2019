@@ -6,3 +6,7 @@ Telepítés:
 Fő menü:
 	- Játék: új játék indítására van lehetőség, szint választás utána.
 	- Kilépés: Kilépés a játékból.
+
+Levels:
+	- Select level: új játékot indíthatunk a kiválasztott nehézségi szinten. 
+	- Back: visszalépés a főmenübe.
