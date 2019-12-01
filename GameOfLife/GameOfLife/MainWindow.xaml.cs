@@ -24,5 +24,18 @@ namespace GameOfLife
         {
             InitializeComponent();
         }
+
+        private void StartGame_Click(object sender, RoutedEventArgs e)
+        {
+            Levels level = new Levels();
+            level.Show();
+            Hide();
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+
+        }
     }
 }

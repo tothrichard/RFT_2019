@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameOfLife"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="500" Width="800">
+    <DockPanel Background="Black">
+        <StackPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="startGame" Content="Játék" Margin="0,0,0,20" Background="Red"  Width="150" Height="100" Click="StartGame_Click"/>
+            <Button x:Name="exit" Content="Kilépés" Width="150" Background="Cyan"  Height="100" Click="Exit_Click"/>
+        </StackPanel>
+    </DockPanel>
 </Window>
