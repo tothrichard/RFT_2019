@@ -35,7 +35,7 @@ namespace GameOfLife
                     Rectangle r = new Rectangle();
                     r.Width = Board.ActualWidth / cellwide - 2.0; //aktuális szélesség
                     r.Height = Board.ActualHeight / cellhigh - 2.0; //aktuális magasság
-                    r.Fill = (cube.Next(0, 2) == 1) ? Brushes.Cyan : Brushes.Red; //kitöltés
+                    r.Fill = (cube.Next(0, 2) == 1) ? Brushes.Cyan : Brushes.Black; //kitöltés
                     Board.Children.Add(r);
                     Canvas.SetLeft(r, j * Board.ActualWidth / cellwide);
                     Canvas.SetTop(r, i * Board.ActualHeight / cellhigh);
@@ -59,7 +59,7 @@ namespace GameOfLife
         private void R_MouseDown(object sender, MouseButtonEventArgs e) //gomblenyomásra színt változtat
         {
             ((Rectangle)sender).Fill =
-                (((Rectangle)sender).Fill == Brushes.Cyan) ? Brushes.Red : Brushes.Cyan;
+                (((Rectangle)sender).Fill == Brushes.IndianRed) ? Brushes.Black : Brushes.IndianRed;
         }
 
 
@@ -86,21 +86,21 @@ namespace GameOfLife
                     int a = 0;
 
                     //ez vizsgálja hány szomszédja van 
-                    if (area[top, jLeft].Fill == Brushes.Red)
+                    if (area[top, jLeft].Fill == Brushes.Black)
                     { a++; }
-                    if (area[top, j].Fill == Brushes.Red)
+                    if (area[top, j].Fill == Brushes.Black)
                     { a++; }
-                    if (area[top, jRight].Fill == Brushes.Red)
+                    if (area[top, jRight].Fill == Brushes.Black)
                     { a++; }
-                    if (area[i, jLeft].Fill == Brushes.Red)
+                    if (area[i, jLeft].Fill == Brushes.Black)
                     { a++; }
-                    if (area[i, jRight].Fill == Brushes.Red)
+                    if (area[i, jRight].Fill == Brushes.Black)
                     { a++; }
-                    if (area[iRight, jLeft].Fill == Brushes.Red)
+                    if (area[iRight, jLeft].Fill == Brushes.Black)
                     { a++; }
-                    if (area[iRight, j].Fill == Brushes.Red)
+                    if (area[iRight, j].Fill == Brushes.Black)
                     { a++; }
-                    if (area[iRight, jRight].Fill == Brushes.Red)
+                    if (area[iRight, jRight].Fill == Brushes.Black)
                     { a++; }
 
                     neighbors[i, j] = a;
@@ -113,11 +113,11 @@ namespace GameOfLife
                 {
                     if (neighbors[i, j] < 2 || neighbors[i, j] > 3)
                     {
-                        area[i, j].Fill = Brushes.Cyan;
+                        area[i, j].Fill = Brushes.IndianRed;
                     }
                     else if (neighbors[i, j] == 3)
                     {
-                        area[i, j].Fill = Brushes.Red;
+                        area[i, j].Fill = Brushes.Black;
                     }
                 }
             }
