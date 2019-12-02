@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameOfLife"
         mc:Ignorable="d"
-        Title="Levels" Height="450" Width="800">
+        Title="Levels" Height="450" Width="800" Background="SandyBrown">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -17,13 +17,13 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Grid.Column="0" Grid.Row="0" x:Name="Easy" Click="Easy_Click" Background="Red"  Width="100" Height="40">Easy</Button>
-        <Button Grid.Column="1" Grid.Row="0" x:Name="Medium" Click="Medium_Click" Background="Red"  Width="100" Height="40">Medium</Button>
-        <Button Grid.Column="2" Grid.Row="0" x:Name="Hard" Click="Hard_Click" Background="Red"  Width="100" Height="40">Hard</Button>
-        <Button Grid.Column="0" Grid.Row="1" x:Name="Expert" Click="Expert_Click" Background="Red"  Width="100" Height="40">Expert</Button>
-        <Button Grid.Column="1" Grid.Row="1" x:Name="Legend" Click="Legend_Click" Background="Red"  Width="100" Height="40">Legend</Button>
-        <Button Grid.Column="2" Grid.Row="1" x:Name="Ultimate" Click="Ultimate_Click" Background="Red"   Width="100" Height="40">Ultimate</Button>
-        <Button Grid.Column="1" Grid.Row="2" x:Name="back" Click="Back_Click" Background="Cyan"  Width="100" Height="40">Back</Button>
+        <Button Grid.Column="0" Grid.Row="0" x:Name="Easy" Click="Easy_Click" Background="DarkGoldenrod"  Width="100" Height="40">Easy</Button>
+        <Button Grid.Column="1" Grid.Row="0" x:Name="Medium" Click="Medium_Click" Background="DarkGoldenrod"  Width="100" Height="40">Medium</Button>
+        <Button Grid.Column="2" Grid.Row="0" x:Name="Hard" Click="Hard_Click" Background="DarkGoldenrod"  Width="100" Height="40">Hard</Button>
+        <Button Grid.Column="0" Grid.Row="1" x:Name="Expert" Click="Expert_Click" Background="DarkGoldenrod"  Width="100" Height="40">Expert</Button>
+        <Button Grid.Column="1" Grid.Row="1" x:Name="Legend" Click="Legend_Click" Background="DarkGoldenrod"  Width="100" Height="40">Legend</Button>
+        <Button Grid.Column="2" Grid.Row="1" x:Name="Ultimate" Click="Ultimate_Click" Background="DarkGoldenrod"   Width="100" Height="40">Ultimate</Button>
+        <Button Grid.Column="1" Grid.Row="2" x:Name="back" Click="Back_Click" Background="Khaki"  Width="100" Height="40">Back</Button>
 
 
     </Grid>
