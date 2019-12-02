@@ -36,7 +36,7 @@ namespace GameOfLife
                     Rectangle r = new Rectangle();
                     r.Width = Board.ActualWidth / cellwide - 2.0; //aktuális szélesség
                     r.Height = Board.ActualHeight / cellhigh - 2.0; //aktuális magasság
-                    r.Fill = (cube.Next(0, 2) == 1) ? Brushes.DarkBlue : Brushes.Yellow; //kitöltés
+                    r.Fill = (cube.Next(0, 2) == 1) ? Brushes.Lavender : Brushes.DarkOrchid; //kitöltés
                     Board.Children.Add(r);
                     Canvas.SetLeft(r, j * Board.ActualWidth / cellwide);
                     Canvas.SetTop(r, i * Board.ActualHeight / cellhigh);
@@ -57,7 +57,7 @@ namespace GameOfLife
         private void R_MouseDown(object sender, MouseButtonEventArgs e) //gomblenyomásra színt változtat
         {
             ((Rectangle)sender).Fill =
-                (((Rectangle)sender).Fill == Brushes.Cyan) ? Brushes.Yellow : Brushes.DarkBlue;
+                (((Rectangle)sender).Fill == Brushes.Cyan) ? Brushes.DarkOrchid : Brushes.Lavender;
         }
 
         private void Timer_Tick(object sender, EventArgs e) //vizsgálja a táblát
@@ -83,21 +83,21 @@ namespace GameOfLife
                     int a = 0;
 
                     //ez vizsgálja hány szomszédja van 
-                    if (area[top, jLeft].Fill == Brushes.Yellow)
+                    if (area[top, jLeft].Fill == Brushes.DarkOrchid)
                     { a++; }
-                    if (area[top, j].Fill == Brushes.Yellow)
+                    if (area[top, j].Fill == Brushes.DarkOrchid)
                     { a++; }
-                    if (area[top, jRight].Fill == Brushes.Yellow)
+                    if (area[top, jRight].Fill == Brushes.DarkOrchid)
                     { a++; }
-                    if (area[i, jLeft].Fill == Brushes.Yellow)
+                    if (area[i, jLeft].Fill == Brushes.DarkOrchid)
                     { a++; }
-                    if (area[i, jRight].Fill == Brushes.Yellow)
+                    if (area[i, jRight].Fill == Brushes.DarkOrchid)
                     { a++; }
-                    if (area[iRight, jLeft].Fill == Brushes.Yellow)
+                    if (area[iRight, jLeft].Fill == Brushes.DarkOrchid)
                     { a++; }
-                    if (area[iRight, j].Fill == Brushes.Yellow)
+                    if (area[iRight, j].Fill == Brushes.DarkOrchid)
                     { a++; }
-                    if (area[iRight, jRight].Fill == Brushes.Yellow)
+                    if (area[iRight, jRight].Fill == Brushes.DarkOrchid)
                     { a++; }
 
                     neighbors[i, j] = a;
@@ -111,11 +111,11 @@ namespace GameOfLife
                 {
                     if (neighbors[i, j] < 2 || neighbors[i, j] > 3)
                     {
-                        area[i, j].Fill = Brushes.DarkBlue;
+                        area[i, j].Fill = Brushes.Lavender;
                     }
                     else if (neighbors[i, j] == 3)
                     {
-                        area[i, j].Fill = Brushes.Yellow;
+                        area[i, j].Fill = Brushes.DarkOrchid;
                     }
                 }
             }

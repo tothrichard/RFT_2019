@@ -35,7 +35,7 @@ namespace GameOfLife
                     Rectangle r = new Rectangle();
                     r.Width = Board.ActualWidth / cellwide - 2.0; //aktuális szélesség
                     r.Height = Board.ActualHeight / cellhigh - 2.0; //aktuális magasság
-                    r.Fill = (cube.Next(0, 2) == 1) ? Brushes.Cyan : Brushes.Black; //kitöltés
+                    r.Fill = (cube.Next(0, 2) == 1) ? Brushes.IndianRed : Brushes.Black; //kitöltés
                     Board.Children.Add(r);
                     Canvas.SetLeft(r, j * Board.ActualWidth / cellwide);
                     Canvas.SetTop(r, i * Board.ActualHeight / cellhigh);

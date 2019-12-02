@@ -36,7 +36,7 @@ namespace GameOfLife
                     Rectangle r = new Rectangle();
                     r.Width = Board.ActualWidth / cellwide - 2.0; //aktuális szélesség
                     r.Height = Board.ActualHeight / cellhigh - 2.0; //aktuális magasság
-                    r.Fill = (cube.Next(0, 2) == 1) ? Brushes.Yellow : Brushes.Red; //kitöltés
+                    r.Fill = (cube.Next(0, 2) == 1) ? Brushes.DarkMagenta : Brushes.Gray; //kitöltés
                     Board.Children.Add(r);
                     Canvas.SetLeft(r, j * Board.ActualWidth / cellwide);
                     Canvas.SetTop(r, i * Board.ActualHeight / cellhigh);
@@ -60,7 +60,7 @@ namespace GameOfLife
         private void R_MouseDown(object sender, MouseButtonEventArgs e) //gomblenyomásra színt változtat
         {
             ((Rectangle)sender).Fill =
-                (((Rectangle)sender).Fill == Brushes.Cyan) ? Brushes.Red : Brushes.Yellow;
+                (((Rectangle)sender).Fill == Brushes.Cyan) ? Brushes.Gray : Brushes.DarkMagenta;
         }
 
         private void Timer_Tick(object sender, EventArgs e) //vizsgálja a táblát
@@ -114,11 +114,11 @@ namespace GameOfLife
                 {
                     if (neighbors[i, j] < 2 || neighbors[i, j] > 3)
                     {
-                        area[i, j].Fill = Brushes.Yellow;
+                        area[i, j].Fill = Brushes.DarkMagenta;
                     }
                     else if (neighbors[i, j] == 3)
                     {
-                        area[i, j].Fill = Brushes.Red;
+                        area[i, j].Fill = Brushes.Gray;
                     }
                 }
             }
