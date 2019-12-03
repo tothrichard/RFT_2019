@@ -123,17 +123,31 @@ namespace GameOfLife
 
         private void buttonStartStop_Click(object sender, RoutedEventArgs e)
         {
+            if (timer.IsEnabled)
+            {
+                timer.Stop();
+                buttonStartStop.Content = "Start!";
+            }
+            else
+            {
+                timer.Start();
+                buttonStartStop.Content = "Stop!";
 
+            }
         }
 
         private void check_Click(object sender, RoutedEventArgs e)
         {
-
+            Levels level = new Levels();
+            level.Show();
+            Hide();
         }
 
         private void menu_Click(object sender, RoutedEventArgs e)
         {
-
+            MainWindow menu = new MainWindow();
+            menu.Show();
+            Hide();
         }
     }
 }
