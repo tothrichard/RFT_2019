@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameOfLife"
         mc:Ignorable="d"
-        Title="Expert" Height="600" Width="800">
+        Title="Expert" Height="600" Width="800" Background="SandyBrown">
     <Grid>
         <Grid>
             <Canvas x:Name="Board" HorizontalAlignment="Left" Height="500" Margin="181,40,0,0" VerticalAlignment="Top" Width="554"/>
-            <Button x:Name="buttonStartStop" Content="Start!" Background="Yellow"  HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="107" Click="ButtonStartStop_Click" />
-            <Button x:Name="check" Content="Pályák" Background="Red"  HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Width="107" Click="Check_Click"/>
-            <Button x:Name="menu" Content="Menu" Background="Cyan"  HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" Width="107" Click="Menu_Click"/>
+            <Button x:Name="buttonStartStop" Content="Start!" Background="BurlyWood"  HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="107" Click="ButtonStartStop_Click" />
+            <Button x:Name="check" Content="Pályák" Background="Tomato"  HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Width="107" Click="Check_Click"/>
+            <Button x:Name="menu" Content="Menu" Background="Red"  HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" Width="107" Click="Menu_Click"/>
         </Grid>
     </Grid>
 </Window>

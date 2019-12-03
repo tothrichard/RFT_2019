@@ -60,7 +60,7 @@ namespace GameOfLife
         private void R_MouseDown(object sender, MouseButtonEventArgs e) //gomblenyomásra színt változtat
         {
             ((Rectangle)sender).Fill =
-                (((Rectangle)sender).Fill == Brushes.Cyan) ? Brushes.Gray : Brushes.DarkMagenta;
+                (((Rectangle)sender).Fill == Brushes.Gray) ? Brushes.Gray : Brushes.DarkMagenta;
         }
 
         private void Timer_Tick(object sender, EventArgs e) //vizsgálja a táblát
@@ -86,21 +86,21 @@ namespace GameOfLife
                     int a = 0;
 
                     //ez vizsgálja hány szomszédja van 
-                    if (area[top, jLeft].Fill == Brushes.Red)
+                    if (area[top, jLeft].Fill == Brushes.Gray)
                     { a++; }
-                    if (area[top, j].Fill == Brushes.Red)
+                    if (area[top, j].Fill == Brushes.Gray)
                     { a++; }
-                    if (area[top, jRight].Fill == Brushes.Red)
+                    if (area[top, jRight].Fill == Brushes.Gray)
                     { a++; }
-                    if (area[i, jLeft].Fill == Brushes.Red)
+                    if (area[i, jLeft].Fill == Brushes.Gray)
                     { a++; }
-                    if (area[i, jRight].Fill == Brushes.Red)
+                    if (area[i, jRight].Fill == Brushes.Gray)
                     { a++; }
-                    if (area[iRight, jLeft].Fill == Brushes.Red)
+                    if (area[iRight, jLeft].Fill == Brushes.Gray)
                     { a++; }
-                    if (area[iRight, j].Fill == Brushes.Red)
+                    if (area[iRight, j].Fill == Brushes.Gray)
                     { a++; }
-                    if (area[iRight, jRight].Fill == Brushes.Red)
+                    if (area[iRight, jRight].Fill == Brushes.Gray)
                     { a++; }
 
                     neighbors[i, j] = a;

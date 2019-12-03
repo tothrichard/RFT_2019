@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameOfLife"
         mc:Ignorable="d"
-        Title="Hard" Height="450" Width="800" Background="BurlyWood">
+        Title="Hard" Height="600" Width="800" Background="BurlyWood">
     <Grid>
         <Grid>
             <Canvas x:Name="Board" HorizontalAlignment="Left" Height="500" Margin="181,40,0,0" VerticalAlignment="Top" Width="554"/>
