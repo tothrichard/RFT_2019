@@ -85,6 +85,7 @@ namespace GameOfLife
                 Timer2.Stop();
                 Win game = new Win();
                 game.Show();
+                this.Close();
             }
         }
         const int cellwide = 20;

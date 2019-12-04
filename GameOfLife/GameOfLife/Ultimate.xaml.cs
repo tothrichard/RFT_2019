@@ -20,7 +20,7 @@ namespace GameOfLife
     /// </summary>
     public partial class Ultimate : Window
     {
-        private int time = 15;
+        private int time = 240;
         private DispatcherTimer Timer2;
         public Ultimate()
         {
@@ -84,6 +84,7 @@ namespace GameOfLife
                 Timer2.Stop();
                 Win game = new Win();
                 game.Show();
+                this.Close();
             }
         }
 

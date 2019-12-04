@@ -21,7 +21,7 @@ namespace GameOfLife
     /// </summary>
     public partial class Expert : Window
     {
-        private int time = 15;
+        private int time = 90;
         private DispatcherTimer Timer2;
         public Expert()
         {
@@ -84,6 +84,7 @@ namespace GameOfLife
                 Timer2.Stop();
                 Win game = new Win();
                 game.Show();
+                this.Close();
             }
         }
 
