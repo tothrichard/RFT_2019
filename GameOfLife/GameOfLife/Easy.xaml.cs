@@ -20,9 +20,16 @@ namespace GameOfLife
     /// </summary>
     public partial class Easy : Window
     {
+        private int time = 15;
+        private DispatcherTimer Timer2;
         public Easy()
         {
+
             InitializeComponent();
+            Timer2 = new DispatcherTimer();                     //ÚJ ELEM 
+            Timer2.Interval = new TimeSpan(0, 0, 1);            //ÚJ ELEM 
+            Timer2.Tick += Timer_Tick2;                         //ÚJ ELEM 
+            Timer2.Start();                                     //ÚJ ELEM 
             Random cube = new Random();
 
             Board.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
@@ -50,6 +57,38 @@ namespace GameOfLife
             timer.Tick += Timer_Tick;
          
         }
+        void Timer_Tick2(object sender, EventArgs e)            //ÚJ ELEM 
+        {
+            if (time > 0)
+            {
+                if (time <= 10)
+                {
+                    if (time % 2 == 0)
+                    {
+                        TBCountDown.Foreground = Brushes.Red;
+                    }
+                    else
+                    {
+                        TBCountDown.Foreground = Brushes.Black;
+
+                    }
+                    time--;
+                    TBCountDown.Text = string.Format("00:0{0}:0{1}", time / 60, time % 60);
+                }
+                else
+                {
+                    time--;
+                    TBCountDown.Text = string.Format("00:0{0}:{1}", time / 60, time % 60);
+                }
+            }
+            else
+            {
+                Timer2.Stop();
+                Win game = new Win();
+                game.Show();
+            }
+        }
+
         int[] ttime = new int[2] { 1, 0 };
         const int cellwide = 10;
         const int cellhigh = 10;
