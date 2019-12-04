@@ -21,9 +21,16 @@ namespace GameOfLife
     /// </summary>
     public partial class Hard : Window
     {
+        private int time = 30;                                   //ÚJ ELEM 
+        private DispatcherTimer Timer2;                          //ÚJ ELEM 
+
         public Hard()
         {
             InitializeComponent();
+            Timer2 = new DispatcherTimer();                     //ÚJ ELEM 
+            Timer2.Interval = new TimeSpan(0, 0, 1);            //ÚJ ELEM 
+            Timer2.Tick += Timer_Tick2;                         //ÚJ ELEM 
+            Timer2.Start();                                     //ÚJ ELEM 
             Random cube = new Random();
 
             Board.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
@@ -50,7 +57,37 @@ namespace GameOfLife
             timer.Tick += Timer_Tick;
 
         }
+        void Timer_Tick2(object sender, EventArgs e)            //ÚJ ELEM 
+        {
+            if (time > 0)
+            {
+                if (time <= 10)
+                {
+                    if (time % 2 == 0)
+                    {
+                        TBCountDown.Foreground = Brushes.Red;
+                    }
+                    else
+                    {
+                        TBCountDown.Foreground = Brushes.Black;
 
+                    }
+                    time--;
+                    TBCountDown.Text = string.Format("00:0{0}:0{1}", time / 60, time % 60);
+                }
+                else
+                {
+                    time--;
+                    TBCountDown.Text = string.Format("00:0{0}:{1}", time / 60, time % 60);
+                }
+            }
+            else
+            {
+                Timer2.Stop();
+               Win game = new Win();
+                game.Show();
+            }
+        }
 
         const int cellwide = 30;
         const int cellhigh = 30;
@@ -60,7 +97,7 @@ namespace GameOfLife
         private void R_MouseDown(object sender, MouseButtonEventArgs e) //gomblenyomásra színt változtat
         {
             ((Rectangle)sender).Fill =
-                (((Rectangle)sender).Fill == Brushes.Gray) ? Brushes.Gray : Brushes.DarkMagenta;
+                (((Rectangle)sender).Fill == Brushes.DarkMagenta) ? Brushes.Gray : Brushes.DarkMagenta;
         }
 
         private void Timer_Tick(object sender, EventArgs e) //vizsgálja a táblát

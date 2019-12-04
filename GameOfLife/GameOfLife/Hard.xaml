@@ -12,6 +12,8 @@
             <Button x:Name="buttonStartStop" Content="Start!" Background="SandyBrown"  HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="107" Click="ButtonStartStop_Click" />
             <Button x:Name="check" Content="Pályák" Background="Tomato"  HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Width="107" Click="Check_Click"/>
             <Button x:Name="menu" Content="Menu" Background="Red"  HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" Width="107" Click="Menu_Click"/>
+            <TextBlock Name="TBCountDown" TextAlignment="Center" FontSize="30" FontFamily="Segoe UI Light" Margin="10,441,646,87"/>
+
         </Grid>
     </Grid>
 </Window>
