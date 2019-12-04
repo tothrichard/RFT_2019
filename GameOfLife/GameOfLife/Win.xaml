@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:GameOfLife"
         mc:Ignorable="d"
         Title="Win" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBox DockPanel.Dock="Top" Width="402" Height="112" Margin="20" FontSize="80" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">TIME OUT!</TextBox>
+        <Button x:Name="Menu" Click="Menu_Click" DockPanel.Dock="Left" Width="152" Height="40" Margin="20">Menü</Button>
+        <Button x:Name="Palya" Click="Palya_Click" DockPanel.Dock="Right" Width="154" Height="40" Margin="20">Új pálya</Button>
+    </DockPanel>
 </Window>

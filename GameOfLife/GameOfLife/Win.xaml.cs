@@ -23,5 +23,19 @@ namespace GameOfLife
         {
             InitializeComponent();
         }
+
+        private void Menu_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow menu = new MainWindow();
+            menu.Show();
+            Hide();
+        }
+
+        private void Palya_Click(object sender, RoutedEventArgs e)
+        {
+            Levels level = new Levels();
+            level.Show();
+            Hide();
+        }
     }
 }
