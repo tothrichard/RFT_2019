@@ -16,3 +16,20 @@ Tartalomjegyzék
 4.2 Elfogadási kritériumok
 4.3 Tesztelési időintervallumok 
 
+---------------------------------------
+TESZT TERV
+
+---------------------------------------
+1. Bevezetés
+---------------------------------------
+
+1.1 Tesztelési terv hatóköre, célja
+---------------------------------------
+A tesztelési terv célja a tesztelés teljes körűségének biztosítása, a tesztelés során alkalmazott eljárások és megoldások meghatározásával.
+ 
+1.2 Elvárások
+---------------------------------------
+Az alábbi alap elvárások képezik ennek a teszttervnek az alapját:
+-Az olvasó ismeri az alap dokumentumokat, amelyek meghatározzák a rendszert.
+-A GameOfLife szervezeti egység / projektcsapat felelős a tesztadatok előállításáért. 
+-A tesztprogram az ebben a dokumentumban meghatározott tesztterv alapján fut.
