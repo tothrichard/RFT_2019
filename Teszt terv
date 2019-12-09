@@ -62,3 +62,31 @@ Teszt-koordinátor:
 Projektvezető:   
  - Teszt terv jóváhagyása
  - Teszt forgatókönyv
+
+
+
+
+
+---------------------------------------
+4 Tesztelési jegyzőkönyv és tesztelési jelentés
+---------------------------------------
+
+4.1 Tesztelt elvárások
+--------------------------------------- 
+Az alábbi nem-funkcionális elvárások szerepelnek a követelmény specifikációban, amelyek tesztelésre is kerültek:
+-A menü gombok funkciószerű működése
+-A játék tetszőleges megállítása
+-Újrakezdési lehetőség
+
+
+4.2 Elfogadási kritériumok
+---------------------------------------
+A teszt sikerességének kritériumai:
+-Technikai, a teszt forgatókönyvben leírtak szerint
+-A projekt menedzser jóváhagyása a tesztek sikeres teljesítésére
+
+4.3 Tesztelési időintervallumok
+---------------------------------------
+Időtartam: 6 nap
+Teszt kezdete: 2019/12/01
+Teszt vége: 2019/12/06
