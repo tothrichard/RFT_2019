@@ -1,1 +1,11 @@
-
+Hajdók Szilvia;a játék elején;2019.12.01.;A játék hiba mentes indulása; a teszt sikeres volt.
+Hajdók Szilvia;a játék közben;2019.12.01.;A menü gombok tesztelése, a teszt sikeres volt
+Hajdók Szilvia;a játék közben;2019.12.02.;A levels ablakban gombok a megfelelő szintű játékra vezetnek, a teszt sikeres volt
+Hajdók Szilvia;a játék közben;2019.12.02.;A levels ablakban a "back" gomb a menü felületre visz vissza;a teszt sikertelen 
+Hajdók Szilvia;a játék közben;2019.12.03.;A levels ablakban a "back" gomb a menü felületre visz vissza (javítva);a teszt sikeres volt
+Hajdók Szilvia;a játék közben;2019.12.03.;Az easy levelben a gombok megfelelő működése; a teszt sikeres volt
+Hajdók Szilvia;a játék közben;2019.12.03.;A Medium levelben a gombok megfelelő működése; a teszt sikeres volt
+Hajdók Szilvia;a játék közben;2019.12.04.;Az easy level játékterének tesztelése; a teszt sikeres volt
+Hajdók Szilvia;a játék közben;2019.12.04.;A medium level játékterének tesztelése; a teszt sikeres volt
+Hajdók Szilvia;a játék közben;2019.12.04.;A Hard levelben a gombok megfelelő működése; a teszt sikeres volt
+Hajdók Szilvia;a játék közben;2019.12.04.;A Hard level játékterének tesztelése; a teszt sikeres volt
