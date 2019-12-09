@@ -63,7 +63,25 @@ Projektvezető:
  - Teszt terv jóváhagyása
  - Teszt forgatókönyv
 
+-------------------
+3. Tesztelési terv    
+-------------------
 
+3.1 Fejlesztői teszt
+---------------------------------------
+A fejlesztői tesztelés célja a rendszer alapvető funkcióinak ellenőrzése, a hibakezelés és az alapvető funkciók működésének vizsgálata. 
+Módszere:
+-A gombok megfelelő működése
+-Irányítás megfelelő működése
+-Start gomb lenyomására indul a játék
+
+3.2 Elfogadási teszt
+---------------------------------------
+Az elfogadási teszt (angolul User Acceptance Test) célja a rendszer teljes funkcionalitásának vizsgálata a felhasználók szemszögéből. 
+Módszere:
+-A gombok oda vezetnek ami rájuk van írva 
+-Újrakezdésnél a játék a legelejétől kezdődik
+-Ha lejár az idő a játékot újra lehet indítani 
 
 
 
